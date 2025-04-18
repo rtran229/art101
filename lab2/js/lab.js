@@ -5,7 +5,7 @@
 function send_Message(param1, param2) {
   return`
    <h1>Hello, World!<h1>
-   <p> I've had Nick as a partner in a few other classes, and think we share the same great humor. I'm a bit confused but he has been helpful with his personal experience.</p>]
+   <p>I've had Nick as a partner in a few other classes, and think we share the same great humor. I'm a bit confused but he has been helpful with his personal experience.</p>
   `;
 }
 
@@ -16,3 +16,4 @@ function main() {
 }
 
 main();
+  
