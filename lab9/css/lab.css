@@ -1,0 +1,14 @@
+.minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #c8834e;
+    background-color: #e5ca9c;
+  }
+
+  
+.special {
+    background-color: #d7a297;
+    border: dotted 50px #c2655c;
+    color: #f7e9d8;
+    font-weight: bold;
+}
