@@ -15,10 +15,10 @@ function generateRandomText() {
 
 // click listener for button
 $("#make-convo").click(function(){
+  //new fake dialouge
+  const newText = generateRandomText();
+  //delete old string
+  $("output").find(".text").remove();
+  //append new div
+  $("#output").append('<div class="text"><p>' + newText + '</p></div>');
 });
-
-// get new fake dialogue
-const newText = generateRandomText();
-
-// append a new div to our output div
-$("#output").append('<div class="text"><p>' + newText + '</p></div>');
