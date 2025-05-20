@@ -13,7 +13,7 @@ $("#submit").click(function(){
 });
 
 // get value of input field
-const userName = $("#user-name").val();
+const userName = $("#username").val();
 
 // now let's sort it
 userNameSorted = sortString(userName);
