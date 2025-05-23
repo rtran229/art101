@@ -8,7 +8,7 @@ function visionSorter(str){
   let mod = length % 7;
 
 //Mod Results
-  if (mod == 0){
+   if (mod == 0){
     return "Anemo";
   } else if (mod == 1) {
     return "Geo";
