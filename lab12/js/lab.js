@@ -36,6 +36,6 @@ $("#button").click(function() {
   $("#output").find("#text").remove();
   //Append a new paragraph
   $("#output").append(
-    '<div class = "text"><p>The vision sorter has determined you are a ' + vision + ' Vision holder !</p></div>'
+    '<div class = "text"><p>The Archons blessed you with a ' + vision + ' Vision!</p></div>'
   );
 });
