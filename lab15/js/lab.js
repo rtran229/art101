@@ -1,29 +1,27 @@
-// Lab13.js - Loops
+// Lab15.js - AJAX
 // Author: Julie Tran
-// Date: May 26 2025
+// Date: June 2 2025
 
-//Variables
-let STR = "";
+//Doc ready
+$(document).ready(function() {
+  //Clicking button
+  $("#activate").click(function() {
+    //API call
+    $.ajax({
+      url: "https://pokeapi.co/api/v2/pokedex/2/",
+      type: "GET",
+      dataType: "json",
 
-//Function
-for (let i = 1; i <= 200; i++){
-  let str = "";
+      success: function(data) {
+        console.log(data);
+        //Display Pokedex
+        $("#output").html("<p>" + data.value + "</p>");
+      },
 
-//Calcs
-  if ( i % 3 == 0) str += "Meow";
-  if ( i % 5 == 0) str += "Woof";
-  if ( i % 7 == 0) str += "Nyan";
-
-//Formatting
-  if (str == "") {
-    str = i;
-  } else {
-    str = i + " " + str + "!";
-  }
-
-//Make Output
-  STR += str + "<br>";
-}
-
-//Output
-$("#output").html(STR);
+      error: function(jqXHR, textStatus, errorThrown) {
+        console.log("Error:", textStatus, errorThrown);
+        $("#output").append("<p class='error'> Looks like something is wrong.</p>");
+      }
+    });
+  });
+});
