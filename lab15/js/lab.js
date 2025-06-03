@@ -9,13 +9,11 @@ $(document).ready(function() {
     //API call
     $.ajax({
       url: "https://pokeapi.co/api/v2/pokedex/2/",
-      type: "GET",
+      type: "GET",  
       dataType: "json",
 
       success: function(data) {
         console.log(data);
-        //Display Pokedex
-        $("#output").html("<p>" + data.value + "</p>");
       },
 
       error: function(jqXHR, textStatus, errorThrown) {
